@@ -56,7 +56,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 "user_rol": "films"}'
 ```
 - Respuesta
-![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
+  ![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
 
 
 - **Obtener todos los usuarios**
