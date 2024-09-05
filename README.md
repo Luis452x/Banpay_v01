@@ -30,9 +30,9 @@
 
 Para asegurarse que la API esta corriendo, al ingresar al enlace se regresa un mensaje de bienvenida
 
-   curl -X 'GET' \
-  'http://127.0.0.1:8000/' \
-  -H 'accept: application/json'
+/?   curl -X 'GET' \
+/?  'http://127.0.0.1:8000/' \
+/?  -H 'accept: application/json'
 
 - Respuesta
     ![Imagen de respuesta][images/bienvenida_api.jpg]
