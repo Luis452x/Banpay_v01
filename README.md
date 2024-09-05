@@ -7,12 +7,21 @@
 # Instalación
 **Clona este repositorio**
 
-    git clone 
+    git clone https://github.com/Luis452x/Banpay_v01.git
 
 ## Configuración del docker
 
-    run the next command:
-    docker-compose up
+    - En una terminal, abre la carpeta donde hayas copiado el proyecto
+    - Una vez en la carpeta escribe el siguiente comando
+    ``` 
+      docker build -t nombre_de_imagen .
+    ```
+    - Una vez creada la imagen la ejecutamos con el siguiente comando
+
+    ``` 
+      docker run -d --name nombre_de_tu_docker -p 8000:8000 nombre_de_imagen
+    ```
+    - Y ya debería estar funcionando :)
 
 ## Endpoints
 
