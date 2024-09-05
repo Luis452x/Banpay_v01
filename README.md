@@ -11,17 +11,17 @@
 
 ## Configuración del docker
 
-    - En una terminal, abre la carpeta donde hayas copiado el proyecto
-    - Una vez en la carpeta escribe el siguiente comando
-    ``` 
-      docker build -t nombre_de_imagen .
-    ```
-    - Una vez creada la imagen la ejecutamos con el siguiente comando
+  - En una terminal, abre la carpeta donde hayas copiado el proyecto
+  - Una vez en la carpeta escribe el siguiente comando
+  ``` 
+    docker build -t nombre_de_imagen .
+  ```
+  - Una vez creada la imagen la ejecutamos con el siguiente comando
 
-    ``` 
-      docker run -d --name nombre_de_tu_docker -p 8000:8000 nombre_de_imagen
-    ```
-    - Y ya debería estar funcionando :)
+  ``` 
+    docker run -d --name nombre_de_tu_docker -p 8000:8000 nombre_de_imagen
+  ```
+  - Y ya debería estar funcionando :)
 
 ## Endpoints
 
