@@ -30,12 +30,13 @@
 
 Para asegurarse que la API esta corriendo, al ingresar al enlace se regresa un mensaje de bienvenida
 
-/?   curl -X 'GET' \
-/?  'http://127.0.0.1:8000/' \
-/?  -H 'accept: application/json'
+```   curl -X 'GET' \
+ 'http://127.0.0.1:8000/' \
+  -H 'accept: application/json'
+```
 
 - Respuesta
-![Imagen de respuesta][images/bienvenida_api.jpg]
+![Imagen de respuesta](images/bienvenida_api.jpg)
 
 - **Crear usuario**
 
@@ -45,7 +46,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 - Ejemplo 
   ![Imagen de ejemplo a través de /docs de FastAPI](images/create_user_docs_try_out.jpg)
 
-    ```curl -X 'POST' \
+  ```curl -X 'POST' \
   'http://127.0.0.1:8000/Login/CreateUser?is_admin_f=true' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -54,7 +55,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
   "user_password": "12345678",
   "user_rol": "films"
 }'
-    ```
+   ```
 - Response
     ![Imagen de respuesta][images/create_user_docs_try_out_response.jpg]
 
