@@ -55,7 +55,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 "user_password": "12345678",
 "user_rol": "films"}'
 ```
-- Respuesta
+- Respuesta de creación de usuario
   ![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
 
 
@@ -124,7 +124,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 - Ejemplo
 ![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_request.jpg)
 
-- Respuesta
+- Respuesta de actualización de usuario
 ![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_response.jpg)
 
 - **Borrar usuario**
