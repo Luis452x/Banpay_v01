@@ -35,7 +35,7 @@ Para asegurarse que la API esta corriendo, al ingresar al enlace se regresa un m
 /?  -H 'accept: application/json'
 
 - Respuesta
-    ![Imagen de respuesta][images/bienvenida_api.jpg]
+![Imagen de respuesta][images/bienvenida_api.jpg]
 
 - **Crear usuario**
 
