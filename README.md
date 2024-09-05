@@ -55,7 +55,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 "user_password": "12345678",
 "user_rol": "films"}'
 ```
-- Response
+- Respuesta
     ![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
 
 
@@ -65,7 +65,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 ```curl -X 'GET' \
 'http://127.0.0.1:8000/User/' \
 -H 'accept: application/json'
-  ```
+```
   
 - Ejemplo obteniendo todos los usuarios
   ![Imagen de ejemplo a través de /docs de FastAPI](images/response_get_all_users.jpg)
@@ -78,15 +78,16 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
     - Para los ejemplos se usó la autenticación que viene en FastAPI con ayuda de un form_data y OAuth2PasswordRequestForm.
     - En caso de que el usuario sea 'admin', podrá hacer peticiones GET, PUT y DELETE de cualquier usuario.
     
+    - Ejemplo de autenticación
     ![Imagen de ejemplo a través de /docs de FastAPI](images/authorization_form_data_fastapi.jpg) 
 
     Una vez hecha la autenticación se puede proceder con los Endpoints
 
-  ```curl -X 'GET' \
+```curl -X 'GET' \
 'http://127.0.0.1:8000/User/Luis' \
 -H 'accept: application/json' \
 -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJMdWlzIiwiSWQiOjEsInJvbCI6ImZpbG1zIiwiaXNfYWRtaW4iOnRydWUsImV4cCI6MTcyNTUyNTY2OH0.NEaSgshHL2h2Q1yPpmCl6-Q-HkXJlPohfOmgnwxY1kg'
- ```
+```
 
   - Ejemplo obteniendo datos de usuario a través del nombre de usuario
     ![Imagen de ejemplo a través de /docs de FastAPI](images/get_user_by_user_name.jpg)
@@ -119,7 +120,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
   "user_password": "12345678",
   "user_rol": "locations"
 }'
-    ```
+```
 - Ejemplo
   ![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_request.jpg)
 
