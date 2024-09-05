@@ -46,27 +46,26 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 - Ejemplo 
   ![Imagen de ejemplo a través de /docs de FastAPI](images/create_user_docs_try_out.jpg)
 
-  ```curl -X 'POST' \
-  'http://127.0.0.1:8000/Login/CreateUser?is_admin_f=true' \
-  -H 'accept: application/json' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "user_name": "Luis",
-  "user_password": "12345678",
-  "user_rol": "films"
-}'
-   ```
+```curl -X 'POST' \
+'http://127.0.0.1:8000/Login/CreateUser?is_admin_f=true' \
+-H 'accept: application/json' \
+-H 'Content-Type: application/json' \
+-d '{
+"user_name": "Luis",
+"user_password": "12345678",
+"user_rol": "films"}'
+```
 - Response
-    ![Imagen de respuesta][images/create_user_docs_try_out_response.jpg]
+    ![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
 
 
 - **Obtener todos los usuarios**
 
     
-    ```curl -X 'GET' \
-  'http://127.0.0.1:8000/User/' \
-  -H 'accept: application/json'
-    ```
+```curl -X 'GET' \
+'http://127.0.0.1:8000/User/' \
+-H 'accept: application/json'
+  ```
   
 - Ejemplo obteniendo todos los usuarios
   ![Imagen de ejemplo a través de /docs de FastAPI](images/response_get_all_users.jpg)
@@ -83,26 +82,27 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 
     Una vez hecha la autenticación se puede proceder con los Endpoints
 
-    ```curl -X 'GET' \
-  'http://127.0.0.1:8000/User/Luis' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJMdWlzIiwiSWQiOjEsInJvbCI6ImZpbG1zIiwiaXNfYWRtaW4iOnRydWUsImV4cCI6MTcyNTUyNTY2OH0.NEaSgshHL2h2Q1yPpmCl6-Q-HkXJlPohfOmgnwxY1kg'
-    ```
-    - Ejemplo obteniendo datos de usuario a través del nombre de usuario
+  ```curl -X 'GET' \
+'http://127.0.0.1:8000/User/Luis' \
+-H 'accept: application/json' \
+-H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJMdWlzIiwiSWQiOjEsInJvbCI6ImZpbG1zIiwiaXNfYWRtaW4iOnRydWUsImV4cCI6MTcyNTUyNTY2OH0.NEaSgshHL2h2Q1yPpmCl6-Q-HkXJlPohfOmgnwxY1kg'
+ ```
+
+  - Ejemplo obteniendo datos de usuario a través del nombre de usuario
     ![Imagen de ejemplo a través de /docs de FastAPI](images/get_user_by_user_name.jpg)
   
-    -En caso de no tener autenticación la respuesta sería la siguiente
+  - En caso de no tener autenticación la respuesta sería la siguiente
     ![Imagen de ejemplo a través de /docs de FastAPI](images/authentication_error.jpg)
 
 - **Obtener los datos de la API de Ghibli filtrados por el rol del usuario**
 
     Hace una petición a la API de Studio Ghibli obteniendo datos con base en el rol del usuario
 
-    ```curl -X 'GET' \
-  'http://127.0.0.1:8000/User/Ghibli/' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJMdWlzIiwiSWQiOjEsInJvbCI6ImZpbG1zIiwiaXNfYWRtaW4iOnRydWUsImV4cCI6MTcyNTUyNzE5Nn0.xzl3bi8KsAdhpBdTRg9JKCVxRM6mXigG31qxfb_CtIY'
-    ```
+```curl -X 'GET' \
+'http://127.0.0.1:8000/User/Ghibli/' \
+-H 'accept: application/json' \
+-H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJMdWlzIiwiSWQiOjEsInJvbCI6ImZpbG1zIiwiaXNfYWRtaW4iOnRydWUsImV4cCI6MTcyNTUyNzE5Nn0.xzl3bi8KsAdhpBdTRg9JKCVxRM6mXigG31qxfb_CtIY'
+```
   
 - Ejemplo de los datos obtenidos
   ![Imagen de ejemplo a través de /docs de FastAPI](images/get_Ghibli_data_by_rol.jpg)
@@ -128,11 +128,11 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 
 - **Borrar usuario**
 
-    ```curl -X 'DELETE' \
+```curl -X 'DELETE' \
   'http://127.0.0.1:8000/User/Luis' \
   -H 'accept: */*' \
   -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJMdWlzIiwiSWQiOjEsInJvbCI6ImZpbG1zIiwiaXNfYWRtaW4iOnRydWUsImV4cCI6MTcyNTUyNzE5Nn0.xzl3bi8KsAdhpBdTRg9JKCVxRM6mXigG31qxfb_CtIY'
-    ```
+  ```
   
 - Ejemplo 
   ![Imagen de ejemplo a través de /docs de FastAPI](images/delete_user_request.jpg)
