@@ -1,6 +1,6 @@
 # Banpay
 
-# Requesitos
+# Requisitos
 - Tener instalado Docker en tu computadora.
 - Tener instalado Git en tu computadora.
 
@@ -56,7 +56,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 "user_rol": "films"}'
 ```
 - Respuesta
-    ![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
+![Imagen de respuesta](images/create_user_docs_try_out_response.jpg)
 
 
 - **Obtener todos los usuarios**
@@ -106,7 +106,7 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 ```
   
 - Ejemplo de los datos obtenidos
-  ![Imagen de ejemplo a través de /docs de FastAPI](images/get_Ghibli_data_by_rol.jpg)
+![Imagen de ejemplo a través de /docs de FastAPI](images/get_Ghibli_data_by_rol.jpg)
 
 - **Actualizar usuario**
 
@@ -122,10 +122,10 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
 }'
 ```
 - Ejemplo
-  ![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_request.jpg)
+![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_request.jpg)
 
 - Respuesta
-  ![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_response.jpg)
+![Imagen de ejemplo a través de /docs de FastAPI](images/update_user_response.jpg)
 
 - **Borrar usuario**
 
@@ -136,8 +136,8 @@ Con el propósito de facilitar las pruebas, se puede crear un usuario admin simp
   ```
   
 - Ejemplo 
-  ![Imagen de ejemplo a través de /docs de FastAPI](images/delete_user_request.jpg)
+![Imagen de ejemplo a través de /docs de FastAPI](images/delete_user_request.jpg)
 
 - Respuesta
-  ![Imagen de ejemplo a través de /docs de FastAPI](images/delete_user_response.jpg)
+![Imagen de ejemplo a través de /docs de FastAPI](images/delete_user_response.jpg)
 
